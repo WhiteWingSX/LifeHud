@@ -1,0 +1,96 @@
+button {
+    margin: 2px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 40px;
+    padding: 0px;
+}
+
+button:hover {
+    border: 2px solid #747474;
+    color: #747474;
+}
+
+.btn-decrease:active {
+    background-color: #74747455;
+}
+
+.counter-container {
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-header {
+    margin: 3px;
+}
+
+.title {
+    margin: 2px;
+}
+
+input {
+    width: 90px;
+    text-align: center;
+}
+
+.btn-reset-container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-reset {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 77px;
+    border-radius: 10px;
+}
+
+.btn-exit-container {
+    justify-content: center;
+}
+
+.btn-exit{
+    padding: 2px;
+    width: 60px;
+}
+
+.btn-increase:hover {
+    border: 2px solid #32d80f;
+    color: #32d80f;
+}
+
+.btn-increase:active {
+    background-color: #32d80f55;
+}
+
+.btn-decrease:hover {
+    border: 2px solid #d80f26;
+    color: #d80f26;
+}
+
+.btn-decrease:active {
+    background-color: #d80f2655;
+}
+
+.btn-increase-mana:hover {
+    border: 2px solid #081fac;
+    color: #081fac;
+}
+
+.btn-increase-mana:active {
+    background-color: #081fac55;
+}
+
+.btn-decrease-mana:hover {
+    border: 2px solid #9809df;
+    color: #9809df;
+}
+
+.btn-decrease-mana:active {
+    background-color: #9809df55;
+}

@@ -1,0 +1,9 @@
+.orderHud {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.orderBoss {
+    display: flex;
+    justify-content: center;
+}

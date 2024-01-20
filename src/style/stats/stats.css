@@ -1,0 +1,22 @@
+.infoPlayer {
+    position: static;
+    display: grid;
+    width: 230px;
+
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    text-align: center;
+}
+
+.btn-exit-container {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.data-input {
+    width: 200px;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 5px;
+}

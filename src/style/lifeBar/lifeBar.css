@@ -1,0 +1,110 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+}
+
+.playerName {
+    margin: 0;
+    position: relative;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.mana-life {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mafla {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 77px;
+    border-radius: 10px;
+}
+
+.changeMana:hover {
+    border: 2px solid #7e3bd3;
+    color: #7e3bd3;
+}
+
+.changeMana:active {
+    background-color: #7e3bd355;
+}
+
+.changeLife:hover {
+    border: 2px solid #32d80f;
+    color: #32d80f;
+}
+
+.changeLife:active {
+    background-color: #32d80f55;
+}
+
+.lifebar-container {
+    width: 230px;
+    height: 25px;
+    border: 2px solid #000000;
+    border-radius: 40% 70% / 100px 1px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+}
+
+.manabar-container {
+    width: 140px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 40% 70% / 100px 1px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+}
+
+.lifebar {
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #88ff4d, #00b303);
+    transition: width 0.3s ease-in-out;
+}
+
+.manabar {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #35c3c3, #455eb0);
+    transition: width 0.3s ease-in-out;
+}
+
+.life-info {
+    padding-left: 10px;
+    margin: 0;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.mana-info {
+    padding-left: 10px;
+    margin: 0;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.App.below-30-percent .lifebar-container {
+    border-color: #ff6200; /* Cambia el color del borde a rojo cuando el porcentaje es menor o igual al 30% */
+}
+
+.App.below-30-percent .lifebar {
+    background-image: linear-gradient(to bottom, #ff974d, #b35100); /* Cambia el gradiente de fondo cuando el porcentaje es menor o igual al 30% */
+}
+
+.App.below-65-percent .lifebar {
+    background-image: linear-gradient(to bottom, #faff56, #d7b738); /* Cambia el gradiente de fondo cuando el porcentaje es menor o igual al 30% */
+}

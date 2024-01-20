@@ -1,0 +1,96 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+}
+
+.mana-life {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mafla {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 77px;
+    border-radius: 10px;
+}
+
+.changeMana:hover {
+    border: 2px solid #7e3bd3;
+    color: #7e3bd3;
+}
+
+.changeMana:active {
+    background-color: #7e3bd355;
+}
+
+.changeLife:hover {
+    border: 2px solid #32d80f;
+    color: #32d80f;
+}
+
+.changeLife:active {
+    background-color: #32d80f55;
+}
+
+.lifebar-container-2 {
+    width: 500px;
+    height: 25px;
+    border: 2px solid #000000;
+    border-radius: 10% 70% / 100px 1px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+}
+
+.manabar-container-2 {
+    width: 200px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 10% 70% / 100px 1px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+}
+
+.lifebar-2 {
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ff8b4d, #b33000);
+    transition: width 0.3s ease-in-out;
+}
+
+.manabar-2 {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #6435c3, #7545b0);
+    transition: width 0.3s ease-in-out;
+}
+
+.life-info {
+    padding-left: 10px;
+    margin: 0;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.mana-info {
+    padding-left: 10px;
+    margin: 0;
+    position: absolute;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.App.below-30-percent .lifebar-container {
+    border-color: #ff6200;
+}
+
+.App.below-30-percent-2 .lifebar-2 {
+    background-image: linear-gradient(to bottom, #c30a09, #790b0b);
+}
