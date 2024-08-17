@@ -9,4 +9,4 @@ Proyecto dedicado para poder realizar algun juego de rol
 2. Instala las dependencias ````npm install````
 3. Corre el proyecto ````npm run dev````
 
-[Link del proyecto]()
+[Link del proyecto](https://hudlife2.netlify.app)
