@@ -7,24 +7,7 @@ export const JoinHealt = ({decreaseLife, increaseLife, increaseCustomCounter, cu
         <div className="App">
             <div>
                 <div className='counter-container'>
-                    <h2 className='title-header'>Life: Hp</h2>
-                <h3 className='title'>Healt:</h3>
-                <div>
-                    <button className='btn-increase' onClick={() => increaseLife(1)}>+1</button>
-                    <button className='btn-increase' onClick={() => increaseLife(3)}>+3</button>
-                    <button className='btn-increase' onClick={() => increaseLife(5)}>+5</button>
-                    <button className='btn-increase' onClick={() => increaseLife(10)}>+10</button>
-                </div>
-
-                <h3 className='title'>Damange:</h3>
-                <div>
-                    <button className='btn-decrease' onClick={() => decreaseLife(1)}>-1</button>
-                    <button className='btn-decrease' onClick={() => decreaseLife(3)}>-3</button>
-                    <button className='btn-decrease' onClick={() => decreaseLife(5)}>-5</button>
-                    <button className='btn-decrease' onClick={() => decreaseLife(10)}>-10</button>
-                </div>
-
-                <h3 className='title'>Custom:</h3>
+                    <h3 className='title-header'>Damange/Healt</h3>
                 <div>
                     <button className='btn-custom' onClick={decreaseCustomCounter}>-</button>
                     <input
@@ -40,10 +23,6 @@ export const JoinHealt = ({decreaseLife, increaseLife, increaseCustomCounter, cu
                     <button className='btn-reset' onClick={resetLife}>Reset Hp</button>
                     <button className='btn-reset' onClick={zero}>Hp: 0</button>
                 </div>
-
-                    <div className='btn-exit-container'>
-                        <button className='btn-exit' onClick={() => {setStart(false)}}>Exit</button>
-                    </div>
 
                 </div>
             </div>

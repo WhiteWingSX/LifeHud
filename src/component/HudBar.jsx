@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import { LifeBar } from './lifeBar.jsx';
-import '../style/Style.css'
 import { BossBar } from './BossBar.jsx';
-
+import '../style/Style.css'
 
 export const HudBar = () => {
 
@@ -13,9 +11,18 @@ export const HudBar = () => {
                 <LifeBar/>
                 <LifeBar/>
                 <LifeBar/>
+                <LifeBar/>
+                <LifeBar/>
+                <LifeBar/>
+                <LifeBar/>
             </div>
             <hr/>
+
+            {/*TODO: Realizar HUD para enemigos menores*/}
+
             <div className='orderBoss'>
+                <BossBar/>
+                <BossBar/>
                 <BossBar/>
             </div>
         </>

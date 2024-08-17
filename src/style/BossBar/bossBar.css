@@ -1,7 +1,7 @@
 .App {
     display: flex;
     flex-direction: column;
-    width: 25vh;
+    width: 520px;
 }
 
 .mana-life {
@@ -37,16 +37,18 @@
 }
 
 .lifebar-container-2 {
+    margin: 5px;
     width: 500px;
     height: 25px;
     border: 2px solid #000000;
-    border-radius: 10% 70% / 100px 1px;
+    border-radius: 3px;
     overflow: hidden;
     background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+    transform: skewX(-30deg);
 }
 
 .manabar-container-2 {
-    width: 200px;
+    width: 350px;
     height: 15px;
     border: 2px solid #000;
     border-radius: 10% 70% / 100px 1px;
@@ -57,13 +59,13 @@
 .lifebar-2 {
     margin: 0;
     height: 100%;
-    background-image: linear-gradient(to bottom, #ff8b4d, #b33000);
+    background-image: linear-gradient(to left, #d34dff, #8000b3);
     transition: width 0.3s ease-in-out;
 }
 
 .manabar-2 {
     height: 100%;
-    background-image: linear-gradient(to bottom, #6435c3, #7545b0);
+    background-image: linear-gradient(to bottom, #949494, #818181);
     transition: width 0.3s ease-in-out;
 }
 
@@ -87,10 +89,6 @@
     -webkit-text-stroke: 0.8px black;
 }
 
-.App.below-30-percent .lifebar-container {
-    border-color: #ff6200;
-}
-
 .App.below-30-percent-2 .lifebar-2 {
-    background-image: linear-gradient(to bottom, #c30a09, #790b0b);
+    background-image: linear-gradient(to bottom, #7909c3, #650b79);
 }

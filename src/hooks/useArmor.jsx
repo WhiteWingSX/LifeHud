@@ -3,65 +3,65 @@ import { useState } from 'react';
 
 export const useArmor = (initialvalue = 0) => {
 
-    const [totalMana, setTotalMana] = useState(initialvalue)
-    const [mana, setMana] = useState(initialvalue)
-    const [customMana, setCustomMana] = useState(0);
+    const [totalArmor, setTotalArmor] = useState(initialvalue)
+    const [armor, setArmor] = useState(initialvalue)
+    const [customArmor, setCustomArmor] = useState(0);
 
 
-    const updateMana = (sp) => {
-        setMana(sp)
-        setTotalMana(sp)
+    const updateArmor = (ar) => {
+        setArmor(ar)
+        setTotalArmor(ar)
     }
 
-    const customConfigMana = (sp) => {
-        setCustomMana(sp)
+    const customConfigArmor = (ar) => {
+        setCustomArmor(ar)
     }
-    const decreaseMana = (sp) => {
-        if (mana <= 0) {
-            setMana(initialvalue);
+    const decreaseArmor = (ar) => {
+        if (armor <= 0) {
+            setArmor(initialvalue);
         } else {
-            setMana((currentLife) => Math.max(currentLife - sp, 0));
+            setArmor((currentLife) => Math.max(currentLife - ar, 0));
         }
     };
 
-    const increaseMana = (sp) => {
-        setMana((currentLife) => currentLife + sp);
-        setMana((currentLife) => Math.min(currentLife, totalMana));
+    const increaseArmor = (ar) => {
+        setArmor((currentLife) => currentLife + ar);
+        setArmor((currentLife) => Math.min(currentLife, totalArmor));
     };
 
-    const resetMana = () => {
-        setMana(totalMana)
+    const resetArmor = () => {
+        setArmor(totalArmor)
     }
 
-    const cero = () => {
-        setMana(initialvalue)
+    const zeroArmor = () => {
+        setArmor(initialvalue)
     }
 
-    const increaseCustomMana = () => {
-        setMana((currentLife) => currentLife + customMana);
-        setMana((currentLife) => Math.min(currentLife, totalMana));
+    const increaseCustomArmor = () => {
+        setArmor((currentLife) => currentLife + customArmor);
+        setArmor((currentLife) => Math.min(currentLife, totalArmor));
     };
 
-    const decreaseCustomMana = () => {
-        if (mana <= 0) {
-            setMana(initialvalue);
+    const decreaseCustomArmor = () => {
+        if (armor <= 0) {
+            setArmor(initialvalue);
         } else {
-            setMana((currentLife) => Math.max(currentLife - customMana, 0));
+            setArmor((currentLife) => Math.max(currentLife - customArmor, 0));
         }
     };
 
 
     return{
-        mana,
-        totalMana,
-        customMana,
-        updateMana,
-        customConfigMana,
-        decreaseMana,
-        increaseMana,
-        resetMana,
-        cero,
-        increaseCustomMana,
-        decreaseCustomMana,
+        armor,
+        totalArmor,
+        customArmor,
+        updateArmor,
+        customConfigArmor,
+        decreaseArmor,
+        increaseArmor,
+        resetArmor,
+        zeroArmor,
+        increaseCustomArmor,
+        decreaseCustomArmor,
     }
 }

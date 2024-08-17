@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 export const useHealt = (initialvalue = 0) => {
 
     const [playerName, setPlayerName] = useState('Player')
+    const [bossName, setBossName] = useState('Boss')
     const [totalBar, setTotalBar] = useState(initialvalue)
     const [life, setLife] = useState(initialvalue)
     const [customCounter, setCustomCounter] = useState(0);
@@ -11,6 +12,10 @@ export const useHealt = (initialvalue = 0) => {
 
     const updatePlayerName = (name) => {
         setPlayerName(name)
+    }
+
+    const updateBossName = (name) => {
+        setBossName(name)
     }
 
     const updateLife = (hp) => {
@@ -59,6 +64,8 @@ export const useHealt = (initialvalue = 0) => {
     return{
         playerName,
         updatePlayerName,
+        bossName,
+        updateBossName,
         life,
         totalBar,
         updateLife,
