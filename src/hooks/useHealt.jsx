@@ -5,6 +5,7 @@ export const useHealt = (initialvalue = 0) => {
 
     const [playerName, setPlayerName] = useState('Player')
     const [bossName, setBossName] = useState('Boss')
+    const [enemyName, setEnemyName] = useState('Enemy')
     const [totalBar, setTotalBar] = useState(initialvalue)
     const [life, setLife] = useState(initialvalue)
     const [customCounter, setCustomCounter] = useState(0);
@@ -16,6 +17,10 @@ export const useHealt = (initialvalue = 0) => {
 
     const updateBossName = (name) => {
         setBossName(name)
+    }
+
+    const updateEnemyName = (name) => {
+        setEnemyName(name)
     }
 
     const updateLife = (hp) => {
@@ -66,6 +71,8 @@ export const useHealt = (initialvalue = 0) => {
         updatePlayerName,
         bossName,
         updateBossName,
+        enemyName,
+        updateEnemyName,
         life,
         totalBar,
         updateLife,

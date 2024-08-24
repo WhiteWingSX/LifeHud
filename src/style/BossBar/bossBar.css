@@ -1,7 +1,31 @@
-.App {
+.AppBoss {
     display: flex;
     flex-direction: column;
     width: 520px;
+}
+
+.App2 {
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+}
+
+
+
+.btn-joinEnemy {
+    padding: 5px;
+    width: 50px;
+}
+
+.barhud-container3 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.backgroundJoin {
+
 }
 
 .mana-life {
@@ -56,6 +80,26 @@
     background-image: linear-gradient(to top, #aaaaaa, #dddddd);
 }
 
+.lifebar-container-3 {
+    margin: 5px;
+    width: 130px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+
+}
+
+.manabar-container-3 {
+    width: 100px;
+    height: 10px;
+    border: 2px solid #000;
+    border-radius: 10% 70% / 100px 1px;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #aaaaaa, #dddddd);
+}
+
 .lifebar-2 {
     margin: 0;
     height: 100%;
@@ -63,7 +107,14 @@
     transition: width 0.3s ease-in-out;
 }
 
-.manabar-2 {
+.lifebar-3 {
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(to left, #ff4d4d, #b30000);
+    transition: width 0.3s ease-in-out;
+}
+
+.manabar-2, .manabar-3 {
     height: 100%;
     background-image: linear-gradient(to bottom, #949494, #818181);
     transition: width 0.3s ease-in-out;
@@ -89,6 +140,10 @@
     -webkit-text-stroke: 0.8px black;
 }
 
-.App.below-30-percent-2 .lifebar-2 {
-    background-image: linear-gradient(to bottom, #7909c3, #650b79);
+.AppBoss.below-30-percent-2 .lifebar-2 {
+    background-image: linear-gradient(to left, #7909c3, #650b79);
+}
+
+.App2.below-30-percent-3 .lifebar-3 {
+    background-image: linear-gradient(to left, #c30909, #790b0b);
 }

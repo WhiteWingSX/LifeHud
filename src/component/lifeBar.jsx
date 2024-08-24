@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import '../style/lifeBar/lifeBar.css'
-import '../style/Style.css'
 import { useHealt } from '../hooks/useHealt.jsx';
 import { Stats } from './pure/stats.jsx';
 import { useMana } from '../hooks/useMana.jsx';
@@ -8,6 +6,8 @@ import { JoinHealt } from './pure/JoinHealt.jsx';
 import { JoinMana } from './pure/JoinMana.jsx';
 import { useArmor } from "../hooks/useArmor.jsx";
 import { JoinArmor } from "./pure/JoinArmor.jsx";
+import '../style/lifeBar/lifeBar.css'
+import '../style/Style.css'
 
 export const LifeBar = () => {
 
@@ -96,34 +96,37 @@ export const LifeBar = () => {
                                     <div
                                         className={`App ${bigDamange ? 'below-30-percent' : ''} ${midDamange ? 'below-65-percent' : ''} ${littleDamage ? 'below-99-percent' : ''}`}>
                                         <div className='barhud-container'>
-                                            <p className='playerName'>{playerName}</p>
+                                            <div style={{display: 'grid', justifyContent: 'center'}}>
+                                                <p className='playerName'>{playerName}</p>
 
-                                            <div className="armorBar-container">
-                                                <p className='armor-info'>Armor: {armor} / {totalArmor} </p>
-                                                <div className="armorBar" style={{width: `${armore}%`}}></div>
+                                                <div className="armorBar-container">
+                                                    <p className='armor-info'>Armor: {armor} / {totalArmor} </p>
+                                                    <div className="armorBar" style={{width: `${armore}%`}}></div>
+                                                </div>
+
+                                                <div className="lifebar-container">
+                                                    <p className='life-info'>Hp: {life} / {totalBar} </p>
+                                                    <div className="lifebar" style={{width: `${monga}%`}}></div>
+                                                </div>
+
+                                                <div className="manabar-container">
+                                                    <p className='mana-info'>Sp: {mana} / {totalMana} </p>
+                                                    <div className="manabar" style={{width: `${Zunnma}%`}}></div>
+                                                </div>
                                             </div>
 
-                                            <div className="lifebar-container">
-                                                <p className='life-info'>Hp: {life} / {totalBar} </p>
-                                                <div className="lifebar" style={{width: `${monga}%`}}></div>
-                                            </div>
-
-                                            <div className="manabar-container">
-                                                <p className='mana-info'>Sp: {mana} / {totalMana} </p>
-                                                <div className="manabar" style={{width: `${Zunnma}%`}}></div>
-                                            </div>
 
                                             <div className='mana-life'
                                                  style={{display: 'grid', justifyContent: "center"}}>
 
                                                 <JoinArmor
-                                                    customArmor = {customArmor}
-                                                    decreaseArmor = {decreaseArmor}
-                                                    increaseArmor = {increaseArmor}
-                                                    resetArmor = {resetArmor}
-                                                    increaseCustomArmor = {increaseCustomArmor}
-                                                    decreaseCustomArmor = {decreaseCustomArmor}
-                                                    zeroArmor = {zeroArmor}
+                                                    customArmor={customArmor}
+                                                    decreaseArmor={decreaseArmor}
+                                                    increaseArmor={increaseArmor}
+                                                    resetArmor={resetArmor}
+                                                    increaseCustomArmor={increaseCustomArmor}
+                                                    decreaseCustomArmor={decreaseCustomArmor}
+                                                    zeroArmor={zeroArmor}
                                                     handleInputChangeArmor={handleInputChangeArmor}
                                                 />
 

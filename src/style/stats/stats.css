@@ -3,7 +3,18 @@
     display: grid;
 }
 
+.infoPlayer2 {
+    position: static;
+    display: grid;
+}
+
 .btn-exit-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-exit-container2 {
     display: flex;
     justify-content: center;
     width: 100%;

@@ -1,6 +1,7 @@
 import { LifeBar } from './lifeBar.jsx';
 import { BossBar } from './BossBar.jsx';
 import '../style/Style.css'
+import { EnemyBar } from "./EnemyHud.jsx";
 
 export const HudBar = () => {
 
@@ -19,6 +20,25 @@ export const HudBar = () => {
             <hr/>
 
             {/*TODO: Realizar HUD para enemigos menores*/}
+            <div className="orderEnemy">
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+                <EnemyBar/>
+            </div>
+            <hr/>
 
             <div className='orderBoss'>
                 <BossBar/>

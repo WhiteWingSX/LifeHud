@@ -65,7 +65,7 @@ export const BossBar = () => {
                     (
                             start ?
                                 (
-                                    <div className={`App ${bigDamange ? 'below-30-percent-2' : ''}`}>
+                                    <div className={`AppBoss ${bigDamange ? 'below-30-percent-2' : ''}`}>
                                         <div className='barhud-container'>
                                             <p className='playerName'>{bossName}</p>
 
@@ -78,7 +78,7 @@ export const BossBar = () => {
                                                 <div className="lifebar-2" style={{width: `${monga}%`}}></div>
                                             </div>
 
-                                            <div style={{display: "grid"}}>
+                                            <div style={{display: "grid", justifyContent: 'center'}}>
                                                 <JoinArmor
                                                     customArmor={customArmor}
                                                     decreaseArmor={decreaseArmor}

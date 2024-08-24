@@ -1,6 +1,6 @@
 .orderHud {
     margin: 0;
-    padding: 0px;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -8,7 +8,15 @@
 
 .orderBoss {
     margin: 0;
-    padding: 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.orderEnemy {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
